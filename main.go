@@ -337,9 +337,6 @@ func callFfmpeg(preOutPath, outPath string) error {
 	cmd.Stderr = os.Stdout
 	err := cmd.Run()
 	os.Remove(preOutPath)
-	if err != nil {
-		return err
-	}
 	return err
 }
 
