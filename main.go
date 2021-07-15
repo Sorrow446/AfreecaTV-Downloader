@@ -194,7 +194,7 @@ func getMeta(params string) (*Meta, error) {
 	}
 	defer do.Body.Close()
 	if do.StatusCode != http.StatusOK {
-		return nil, nil
+		return nil, errors.New(do.Status)
 	}
 	var obj Meta
 	err = xml.NewDecoder(do.Body).Decode(&obj)
