@@ -1,6 +1,8 @@
 # AfreecaTV-Downloader
 AfreecaTV downloader written in Go.
 
+![](https://i.imgur.com/Sq6DcR9.png)
+[Windows binaries](https://github.com/Sorrow446/AfreecaTV-Downloader/releases)
 
 # Setup
 1. **Put FFmpeg in tool's directory.**
@@ -13,10 +15,9 @@ AfreecaTV downloader written in Go.
 The best available quality will be automatically selected. 
 
 Download two videos:   
-`mur_x64.exe https://www.marvel.com/comics/issue/89543/captain_america_2018_28 https://read.marvel.com/#/book/56459`
-
+`atv_downloader_x64.exe https://vod.afreecatv.com/PLAYER/STATION/75107955 https://vod.afreecatv.com/PLAYER/STATION/75107951`    
 Download a single video and from two text files:   
-`mur_x64.exe https://www.marvel.com/comics/issue/89543/captain_america_2018_28 G:\1.txt G:\2.txt`
+`atv_downloader_x64.exe https://vod.afreecatv.com/PLAYER/STATION/75107955 G:\1.txt G:\2.txt`
 
 If building or running from source, you'll need to include the structs.   
 `go run main.go structs.go <urls>...`
